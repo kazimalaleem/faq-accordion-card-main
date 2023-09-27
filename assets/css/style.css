@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Fraunces&family=Hanken+Grotesk&family=Josefin+Sans:ital,wght@1,300;1,400;1,600&family=Kumbh+Sans:wght@400;700&family=League+Spartan&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,900;1,800&family=Outfit&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/* Root Color */
+
+:root {
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+/* Accordion Wapper Color */
+.accordion-card {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+}
+
+.accordion-contaner {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-box-img {
+    width: 80px;
+}
+
+.accordion-img {
+    width: 213px;
+}
+
+.accordion-contant {
+    padding-top: 47px;
+    margin: 0 1em;
+    border-radius: 13px;
+    background: white;
+    height: 100%;
+    padding: 40px 20px 10px;
+    text-align: center;
+}
+
+
+.boldtext:hover {
+    color: var(--soft-red);
+}
+
+.accordion {
+    padding-top: 40px;
+}
+
+.answer {
+    display: none;
+}
+
+p {
+    text-align: start;
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    line-height: 25px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+.accordion-img {
+    width: 250px;
+}
+
+.accordion-box-img {
+    width: 80px;
+    position: absolute;
+    margin-top: 46px;
+}
+
+.text {
+    border-bottom: 1px solid var(--light-grayish-blue);
+    padding-bottom: 5px;
+}
+
+#button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+}
+
+
+.attribution {
+    font-size: 11px;
+    padding-top: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.attribution a {
+    color: var(--soft-red);
+    font-weight: 500;
+}
+
+@media(min-width:767px) {
+
+    .accordion-contaner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 133px;
+    }
+
+    .accordion-contant {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .accordion-img {
+        width: 330px;
+        margin-top: 30px;
+    }
+
+    .accordion-box-img {
+        width: 105px;
+        position: absolute;
+        margin-top: 64px;
+    }
+
+    .dis {
+        line-height: 86px;
+        margin-left: 86px;
+    }
+
+    .answer {
+        margin-bottom: 18%;
+    }
+
+    .attribution {
+        font-size: 14px;
+        padding-top: 30px;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    #button {
+        width: 300px;
+    }
+}
+
+@media (min-width:1024px) {
+    
+    h1 {
+        text-align: start;
+        font-size: 40px;
+    }
+
+    .accordion-contant {
+        width: 876px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .accordion {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .attribution {
+        font-size: 16px;
+        padding-top: 30px;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    #button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        /* width: 100%; */
+        background-color: white;
+        width: 350px;
+    }
+
+    .dis {
+        line-height: 86px;
+        margin-left: 152px;
+
+    }
+
+}
+
+@media (min-width:1440px ) {
+
+    .accordion-contant {
+        width: 876px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        /* width: 100%; */
+        background-color: white;
+        width: 350px;
+    }
+
+    .dis {
+        line-height: 86px;
+        margin-left: 152px;
+
+    }
+
+    .accordion-contant {
+        width: 876px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+}
